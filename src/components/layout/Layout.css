@@ -1,0 +1,27 @@
+#bodyApp { 
+    margin: 0;
+    display: grid;
+    grid-template-columns: 0.2fr 0.95fr 0.05fr;
+    gap: 70px 0px;
+    grid-template-areas:
+        "navbar perfil ."
+        "navbar proyecto ."
+        "navbar estudio .";
+}
+
+
+#navbarContainer {
+    grid-area: navbar;
+}
+
+#profilePageContainer {
+    grid-area: perfil;
+}
+
+#proyectPageContainer {
+    grid-area: proyecto;
+}
+
+#estudiosPageContainer { 
+    grid-area: estudio; 
+}

@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.bodyProyectCard{
+    margin: 15px;
+    background-color: rgb(245, 245, 245);
+    width: 400px;
+    height: auto;
+    padding: 1%;
+    border-radius: 20px 40px 20px 40px;
+-webkit-border-radius: 20px 40px 20px 40px;
+-moz-border-radius: 20px 40px 20px 40px;
+box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+}
+
+.bodyProyectCard:hover{
+    cursor: pointer;
+}
+ 
+.imgProyectCard{
+    height:80%;
+}
+
+.imgProyectCard img{
+    border-radius: 20px 40px 20px 40px;
+-webkit-border-radius: 20px 40px 20px 40px;
+-moz-border-radius: 20px 40px 20px 40px;
+width: 100%;
+}
+
+#fotoHover{
+display: none;
+}
+
+.imgProyectCard:hover{
+    #fotoHover{
+        display: flex;
+        filter: blur(2px);
+        z-index: 1;
+    }
+    #fotoFondo{
+        display: none;
+    }
+}
+
+.divTextHover{
+    position: relative;
+    visibility:hidden;
+    
+}
+
+.imgProyectCard:hover + .divTextHover{
+    visibility: visible;
+    
+}
+
+#textHover{
+    background-color: rgba(233, 228, 150, 0.637);
+    position: absolute;
+    width: 100%;
+    padding:6%;
+    bottom: -20px;
+    border-radius: 0px 0px 20px 40px;
+    -webkit-border-radius: 0px 0px 20px 40px;
+    -moz-border-radius: 0px 0px 20px 40px;
+    font-size: 15px;
+    
+}
+
+
+.detailProyectCard{
+    margin-bottom: 5px;
+}
+
+.detailProyectCard h2{
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+}

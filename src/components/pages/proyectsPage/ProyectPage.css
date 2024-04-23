@@ -1,0 +1,13 @@
+
+.containerProyects{
+    padding: 10px;
+    border: 1px solid black;
+    width: 100%;
+    position: relative;
+}
+
+.containerCards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,10 @@
+
+.containerStudyCardsPage{
+    border: 1px solid black;
+}
+
+.containerStudyCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

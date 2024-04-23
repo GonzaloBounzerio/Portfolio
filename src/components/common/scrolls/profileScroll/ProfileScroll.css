@@ -1,0 +1,68 @@
+
+.bodyProfileScroll{
+
+    overflow: hidden;
+
+    display: flex;
+    align-items:  center;
+
+    height: 100%;
+
+    border-radius: 30px 30px 55px 30px;
+-webkit-border-radius: 30px 30px 55px 30px;
+-moz-border-radius: 30px 30px 55px 30px;
+
+
+box-shadow: 3px 3px 20px -6px rgba(0,0,0,0.75);
+-webkit-box-shadow: 3px 3px 20px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 20px -6px rgba(0,0,0,0.75);
+
+}
+
+
+#divImagenesScroll{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.btnScroll{
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    top: 0;
+}
+
+#divBtnNext{
+    
+    right: 0;
+}
+
+#divBtnPrev{
+    
+    left: 0;
+}
+
+#containerImagenesScroll{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#containerImagenesScroll img{
+    width: 100%;
+}
+
+#btnPrev{
+    cursor: pointer;
+}
+
+#btnNext{
+    cursor: pointer;
+}
