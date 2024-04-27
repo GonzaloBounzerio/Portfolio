@@ -3,7 +3,9 @@ import ProyectPage from "./ProyectPage"
 
 const ProyectPageContainer = () => {
   return (
-    <ProyectPage/>
+    <div className="mainContainer">
+      <ProyectPage/>
+    </div>
   )
 }
 

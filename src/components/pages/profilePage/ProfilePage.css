@@ -2,7 +2,6 @@
 
 .containerCardProfilePage{
     margin-top:20px;
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -17,10 +16,10 @@
 
 .tarjetaDataProfile{
 
-    background: #d48ad5;
-background: linear-gradient(168deg,#d48ad5 20%, #154390 80%);
-background: -webkit-linear-gradient(168deg,#d48ad5 20%, #154390 80%);
-background: -moz-linear-gradient(168deg,#d48ad5 20%, #154390 80%);
+    background: #9d4dff;
+background: linear-gradient(142deg,#9d4dff 30%, #1d269b 80%);
+background: -webkit-linear-gradient(142deg,#9d4dff 30%, #1d269b 80%);
+background: -moz-linear-gradient(142deg,#9d4dff 30%, #1d269b 80%);
 
 
     border: 5px solid #d1d1d1;

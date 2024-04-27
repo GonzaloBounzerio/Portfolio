@@ -6,10 +6,16 @@ import Navbar from "./navbar/Navbar"
 import EstudiosPageContainer from "../pages/studyPage/EstudiosPageContainer"
 
 const LayoutContainer = () => {
+
+  const smoothScroll = (rta) => {
+    let divSelected = document.getElementById(`${rta}`);
+    divSelected.scrollIntoView({behavior: 'smooth'});
+  }
+
   return (
     <div id="bodyApp">
       <div id="navbarContainer">
-        <Navbar/>
+        <Navbar smoothScroll={smoothScroll}/>
       </div>
       <div id="profilePageContainer">
         <ProfilePageContainer/>

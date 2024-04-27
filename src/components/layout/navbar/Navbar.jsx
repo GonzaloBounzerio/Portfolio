@@ -1,16 +1,16 @@
 
 import "./Navbar.css"
 
-const Navbar = () => {
+const Navbar = ({smoothScroll}) => {
 
   return (
     <>
       <div id="containerNavbar">
         <nav className="navegationNavbar">
           <ul>
-            <button className="btn">Sobre mí</button>
-            <button className="btn">Mis proyectos</button>
-            <button className="btn">Mis estudios</button>
+            <button className="btn" onClick={()=>smoothScroll("profilePageContainer")}>Sobre mí</button>
+            <button className="btn" onClick={()=>smoothScroll("proyectPageContainer")}>Mis proyectos</button>
+            <button className="btn" onClick={()=>smoothScroll("estudiosPageContainer")}>Mis estudios</button>
           </ul>
         </nav>
         <div className="fotoIcon">

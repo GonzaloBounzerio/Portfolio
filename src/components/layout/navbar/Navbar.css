@@ -2,7 +2,12 @@
 
 #containerNavbar {
     z-index: 10;
-    background-color: #af2774;
+    
+    /* background: #9d4dff;
+background: linear-gradient(142deg,#9d4dff 30%, #1d269b 80%);
+background: -webkit-linear-gradient(142deg,#9d4dff 30%, #1d269b 80%);
+background: -moz-linear-gradient(142deg,#9d4dff 30%, #1d269b 80%); */
+
     position: fixed;
     height: 100vh;
     width: 15%;
@@ -11,8 +16,8 @@
     align-items: center;
     justify-content: space-around;
 
-    border-right: 10px outset rgba(120,31,82,0.51);
-    border-bottom: 10px outset rgba(120,31,82,0.51);
+    border-right: 10px outset var(--violeta);
+    border-bottom: 10px outset var(--rosa);
 
     border-radius: 0px 0px 45px 0px;
 -webkit-border-radius: 0px 0px 45px 0px;

@@ -1,9 +1,14 @@
 
 .bodyProyectCard{
 
+    color: var(--negro);
+
     margin: 20px;
 
-    background-color: rgb(255, 217, 140);
+    background: #70ffdf;
+background: linear-gradient(231deg,#70ffdf 40%, #045ded 90%);
+background: -webkit-linear-gradient(231deg,#70ffdf 40%, #045ded 90%);
+background: -moz-linear-gradient(231deg,#70ffdf 40%, #045ded 90%);
 
     position: relative;
 
@@ -11,7 +16,6 @@
     grid-template-rows: 10% 90%;
     gap: 10px 0px;
 
-    border: 1px solid black;
     width: 40%;
     padding: 20px;
 
@@ -41,10 +45,13 @@
 }
 
 .divTextHover{
-    visibility: hidden;
     position: absolute;
     padding: 20px;
-    background-color: cornsilk;
+
+    background: #c5bdc5;
+background: linear-gradient(168deg,#c5bdc5 20%, #f1f1f1 80%);
+background: -webkit-linear-gradient(168deg,#c5bdc5 20%, #f1f1f1 80%);
+background: -moz-linear-gradient(168deg,#c5bdc5 20%, #f1f1f1 80%);
 
     border-radius: 0px 0px 0px 20px;
 -webkit-border-radius: 0px 0px 0px 20px;
@@ -54,6 +61,7 @@ box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.75);
 
+animation: bajaDivHover 0.2s ease forwards;
 }
 
 .imgProyectCard:hover + .divTextHover{
@@ -72,5 +80,17 @@ box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.75);
     to{
         bottom: 0;
         visibility: visible;
+    }
+}
+
+@keyframes bajaDivHover{
+    from{
+        bottom: 0;
+        filter: blur(2px);
+    }
+    to{
+        filter: blur(100px);
+        bottom: -20px;
+        visibility: hidden;
     }
 }
