@@ -1,96 +1,30 @@
 
 .bodyProyectCard{
 
-    color: var(--negro);
+    border: 1px solid black;
 
-    margin: 20px;
-
-    background: #70ffdf;
-background: linear-gradient(231deg,#70ffdf 40%, #045ded 90%);
-background: -webkit-linear-gradient(231deg,#70ffdf 40%, #045ded 90%);
-background: -moz-linear-gradient(231deg,#70ffdf 40%, #045ded 90%);
+    color: var(--negro2);
 
     position: relative;
 
-    display: grid;
-    grid-template-rows: 10% 90%;
-    gap: 10px 0px;
-
-    width: 40%;
-    padding: 20px;
-
-    border-radius: 40px 20px 0px 20px;
--webkit-border-radius: 40px 20px 0px 20px;
--moz-border-radius: 40px 20px 0px 20px;
-
-    box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
-
-}
-
-.detailProyectCard{
-    text-align: end;
+    width: calc(100% / 3);
 }
 
 .imgProyectCard{
-    width: 100%;
+    height: 100%;
 }
 
 .imgProyectCard img{
     width: 100%;
-    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.detailProyectCard{
+    position: absolute;
+    top: 0;
 }
 
 .divTextHover{
     position: absolute;
-    padding: 20px;
-
-    background: #c5bdc5;
-background: linear-gradient(168deg,#c5bdc5 20%, #f1f1f1 80%);
-background: -webkit-linear-gradient(168deg,#c5bdc5 20%, #f1f1f1 80%);
-background: -moz-linear-gradient(168deg,#c5bdc5 20%, #f1f1f1 80%);
-
-    border-radius: 0px 0px 0px 20px;
--webkit-border-radius: 0px 0px 0px 20px;
--moz-border-radius: 0px 0px 0px 20px;
-
-box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.75);
-
-animation: bajaDivHover 0.2s ease forwards;
+    bottom: 5%;
 }
 
-.imgProyectCard:hover + .divTextHover{
-    animation: subeDivHover 1s ease forwards;
-}
-
-.imgProyectCard:hover img{
-    filter: blur(2px);
-    cursor: pointer;
-}
-
-@keyframes subeDivHover{
-    from{
-        bottom: -20px;
-    }
-    to{
-        bottom: 0;
-        visibility: visible;
-    }
-}
-
-@keyframes bajaDivHover{
-    from{
-        bottom: 0;
-        filter: blur(2px);
-    }
-    to{
-        filter: blur(100px);
-        bottom: -20px;
-        visibility: hidden;
-    }
-}

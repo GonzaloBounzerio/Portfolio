@@ -1,12 +1,12 @@
 
 import "./ProyectCard.css"
-import SingleProyectPageContainer from "../../../pages/singleProyectPage/SingleProyectPageContainer"
+
 
 const ProyectCard = () => {
 
-
-    let abreProyectPage = (ev) => {
-        
+    const textHover = document.getElementById("textHover")
+    textHover.onmouseenter = () => {
+        textHover.style.visibility="visible"
     }
 
   return (
@@ -16,11 +16,9 @@ const ProyectCard = () => {
                 <h2>Lorem ipsum</h2>
             </div>
             <div className="imgProyectCard">
-                <img onClick=
-                {
-                    () => <SingleProyectPageContainer posX={event.clientX} posY={event.clientY}/>
-                } 
-                src="https://res.cloudinary.com/duvugx7r9/image/upload/v1711671985/proyectoPortfolio/lataPepsi1_ru0uq6.jpg" alt="" />
+                <a href="" target="_blank" >
+                    <img src="https://res.cloudinary.com/duvugx7r9/image/upload/v1711671985/proyectoPortfolio/lataPepsi1_ru0uq6.jpg" alt=""/>
+                </a>
             </div>
             <div className="divTextHover">
                 <h4 id="textHover">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum

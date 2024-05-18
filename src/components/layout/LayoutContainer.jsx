@@ -24,7 +24,7 @@ const LayoutContainer = () => {
         <ProyectPageContainer/>
       </div>
       <div id="estudiosPageContainer">
-        <EstudiosPageContainer/>
+        {/* <EstudiosPageContainer/> */}
       </div>
     </div>
   )

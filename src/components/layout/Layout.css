@@ -1,28 +1,26 @@
-#bodyApp { 
-    margin: 0;
-    margin-bottom: 20px;
+#bodyApp{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: grid;
-    grid-template-columns: 0.2fr 0.95fr 0.05fr;
-    gap: 55px 0px;
-    grid-template-areas:
-        "navbar perfil ."
-        "navbar proyecto ."
-        "navbar estudio .";
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-areas: "navbar perfil"
+                         "navbar proyectos"
+                         "navbar estudios";
 }
 
-
-#navbarContainer {
+#navbarContainer{
     grid-area: navbar;
 }
 
-#profilePageContainer {
+#profilePageContainer{
     grid-area: perfil;
 }
 
-#proyectPageContainer {
-    grid-area: proyecto;
+#proyectPageContainer{
+    grid-area: proyectos;
 }
 
-#estudiosPageContainer { 
-    grid-area: estudio; 
+#estudiosPageContainer{
+    grid-area: estudios;
 }

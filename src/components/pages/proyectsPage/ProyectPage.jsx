@@ -3,21 +3,16 @@ import "./ProyectPage.css"
 
 const ProyectPage = () => {
   return (
-    <div className="containerProyects">
-      <div className="subtitulo">
-        Mis Proyectos...
+      <div id="containerProyectCards">
+        <ProyectCard/>
+        {/* <ProyectCard/>
+        <ProyectCard/>
+        {/*<ProyectCard/>
+        <ProyectCard/>
+        <ProyectCard/>
+        <ProyectCard/>
+        <ProyectCard/> */}
       </div>
-      <div className="containerCards">
-        <ProyectCard/>
-        <ProyectCard/>
-        <ProyectCard/>
-        <ProyectCard/>
-        <ProyectCard/>
-        <ProyectCard/>
-        <ProyectCard/>
-        <ProyectCard/>
-      </div>
-    </div>
   )
 }
 
