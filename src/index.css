@@ -4,11 +4,8 @@
   background-color: var(--violeta2);
 
 --gris:#cef5ec;
---rosa:#ff4df0;
---azul:#045ded;
---azul2:#1d269b;
---violeta:#8439e0;
---violeta2:#b477ff;
+--azul:#5394fc;
+--violeta:#b477ff;
 --negro:rgb(44, 44, 44);
 --negro2:rgb(17, 15, 15);
 }

@@ -1,8 +1,6 @@
 
 .bodyProyectCard{
 
-    border: 1px solid black;
-
     color: var(--negro2);
 
     position: relative;
@@ -18,13 +16,37 @@
     width: 100%;
 }
 
-.detailProyectCard{
-    position: absolute;
-    top: 0;
-}
 
 .divTextHover{
+    opacity: 0;
     position: absolute;
     bottom: 5%;
+    padding: 2%;
+    text-align: justify;
 }
 
+.imgProyectCard:hover{
+    animation: opacidad 300ms linear;
+    animation-fill-mode: forwards;
+}
+
+.imgProyectCard:hover + .divTextHover{
+    animation: muestraText 500ms linear;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes opacidad {
+    100%{
+        filter: blur(5px);
+    }
+}
+
+@keyframes muestraText{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}

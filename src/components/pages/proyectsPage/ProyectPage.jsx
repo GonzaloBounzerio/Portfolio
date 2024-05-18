@@ -5,13 +5,14 @@ const ProyectPage = () => {
   return (
       <div id="containerProyectCards">
         <ProyectCard/>
-        {/* <ProyectCard/>
-        <ProyectCard/>
-        {/*<ProyectCard/>
         <ProyectCard/>
         <ProyectCard/>
         <ProyectCard/>
-        <ProyectCard/> */}
+        <ProyectCard/>
+        <ProyectCard/>
+        <ProyectCard/>
+        <ProyectCard/>
+        <ProyectCard/>
       </div>
   )
 }
