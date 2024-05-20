@@ -1,10 +1,7 @@
 
-.containerStudyCardsPage{
-    padding: 10px;
-}
-
 .containerStudyCard{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }

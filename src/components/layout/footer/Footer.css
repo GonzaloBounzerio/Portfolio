@@ -1,0 +1,9 @@
+
+.footerBody{
+    text-align: end;
+}
+
+.footerBody a{
+    text-decoration: none;
+    color: var(--negro);
+}

@@ -4,6 +4,7 @@ import ProfilePageContainer from "../pages/profilePage/ProfilePageContainer"
 import ProyectPageContainer from "../pages/proyectsPage/ProyectPageContainer"
 import Navbar from "./navbar/Navbar"
 import EstudiosPageContainer from "../pages/studyPage/EstudiosPageContainer"
+import Footer from "./footer/Footer"
 
 const LayoutContainer = () => {
 
@@ -24,7 +25,10 @@ const LayoutContainer = () => {
         <ProyectPageContainer/>
       </div>
       <div id="estudiosPageContainer">
-        {/* <EstudiosPageContainer/> */}
+        <EstudiosPageContainer/>
+      </div>
+      <div id="footerContainer">
+        <Footer/>
       </div>
     </div>
   )
