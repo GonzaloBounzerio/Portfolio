@@ -18,32 +18,24 @@ const ProfileScrollContainer = () => {
 
   useEffect( () => {
       setImagen(arrayFotos[posScroll])
-      setIsLoading(false)
   },[posScroll])
 
-  const mueveScroll = (i) => {
-    if ( i > 0 && posScroll < arrayFotos.length - 1){
-      setTimeout( () => {
-        setPosScroll( posScroll + 1)
-      },500)
-      setIsLoading(true)
-    }else{
-      if ( i < 0 && posScroll > 0){
-      setTimeout( () => {
-        setPosScroll( posScroll - 1)
-      },500)
-      setIsLoading(true)
+
+  const mueveScroll = () => {
+    setTimeout( () => {
+      if (posScroll < arrayFotos.length-1){
+        setPosScroll(posScroll + 1)
+      }else{
+        setPosScroll(0)
       }
-    }
+    },2500)
   }
 
 
   return (
 
     <div className="bodyProfileScroll">
-      {
-        isLoading ? <LoadingIcon/> : <ProfileScroll mueveScroll={mueveScroll} imagen={imagen}/>
-      }
+      <ProfileScroll mueveScroll={mueveScroll} imagen={imagen}/>
     </div>
 
 

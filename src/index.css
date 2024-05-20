@@ -8,6 +8,7 @@
 --violeta:#b477ff;
 --negro:rgb(44, 44, 44);
 --negro2:rgb(17, 15, 15);
+
 }
 
 *{
@@ -17,6 +18,17 @@
   font-family: "Fjalla One", sans-serif;
   font-weight: 200;
   font-style: normal;
+
+}
+
+body::-webkit-scrollbar{
+  width: 10px;
+  background-color: var(--gris);
+}
+
+body::-webkit-scrollbar-thumb{
+  background: var(--azul);
+  border-radius: 20px;
 }
 
 button{
